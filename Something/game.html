@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    Something...
+  </head>
+  <body>
+    <h1 id = "moji">Yatteikimashou!</h1>
+    <button id = "nakami">change</button>
+    <script>
+        var point = false;
+        var nakami = document.getElementById("nakami");
+        var moji = document.getElementById("moji");
+        nakami.addEventListener("click", changeGreeting);
+        function changeGreeting(){
+            moji.textContent = point ? "Yatteikimashou!" : "Mou Dame..." ;
+            point = point^true ;
+        }
+    </script>
+  </body>
+</html>
